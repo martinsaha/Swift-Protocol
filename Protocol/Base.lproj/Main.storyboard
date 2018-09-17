@@ -65,9 +65,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pXj-ya-k7V">
-                                <rect key="frame" x="139" y="88" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter the text here..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pXj-ya-k7V">
+                                <rect key="frame" x="20" y="88" width="335" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="h5y-gb-PvW"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -76,7 +78,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igt-pY-Lx3">
-                                <rect key="frame" x="172" y="318.5" width="30" height="30"/>
+                                <rect key="frame" x="172" y="319" width="30" height="30"/>
                                 <state key="normal" title="POP"/>
                                 <connections>
                                     <action selector="click_Pop:" destination="9j9-Ij-tpw" eventType="touchUpInside" id="kPm-hd-XCA"/>
@@ -85,6 +87,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="pXj-ya-k7V" firstAttribute="centerX" secondItem="Igt-pY-Lx3" secondAttribute="centerX" id="11d-eG-uYw"/>
+                            <constraint firstItem="pXj-ya-k7V" firstAttribute="leading" secondItem="gTj-ru-1d0" secondAttribute="leading" constant="20" id="FnM-yl-A97"/>
+                            <constraint firstItem="pXj-ya-k7V" firstAttribute="top" secondItem="gTj-ru-1d0" secondAttribute="top" constant="24" id="bCf-M3-9dq"/>
                             <constraint firstItem="Igt-pY-Lx3" firstAttribute="centerY" secondItem="dxa-vl-h95" secondAttribute="centerY" id="h3V-uH-Exv"/>
                             <constraint firstItem="Igt-pY-Lx3" firstAttribute="centerX" secondItem="dxa-vl-h95" secondAttribute="centerX" id="v9A-wb-7QT"/>
                         </constraints>
